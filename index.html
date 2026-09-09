@@ -76,9 +76,19 @@
 
   <h2>6. Contact</h2>
   <p>If you have any questions about this privacy policy, contact us at
-  <a href="mailto:ndrjvvr&#64;gmail&#46;com">ndrjvvr&#64;gmail&#46;com</a>.</p>
+  <a id="contact-email" href="#">…</a>.</p>
 
   <footer>Denny Horoskop · <code>sk.ndrjvvr.dennyhoroskop</code></footer>
 </div>
+<script>
+  // The address is assembled at runtime from char codes, so no scraper can match
+  // a literal email in the raw HTML. Browsers render it as a normal mailto link.
+  (function () {
+    var c = [110,100,114,106,118,118,114,64,103,109,97,105,108,46,99,111,109];
+    var addr = String.fromCharCode.apply(null, c);
+    var el = document.getElementById('contact-email');
+    if (el) { el.href = 'mailto:' + addr; el.textContent = addr; }
+  })();
+</script>
 </body>
 </html>
