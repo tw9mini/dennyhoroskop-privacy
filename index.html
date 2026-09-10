@@ -1,94 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Denny Horoskop</title>
+<title>Pravidlá ochrany osobných údajov — Denny Horoskop</title>
 <style>
-  :root { --ink: #23213a; --muted: #6b6884; --gold: #b8912f; --bg: #faf9f6; }
+  :root {
+    --navy: #14122b;
+    --navy-soft: #23204a;
+    --gold: #c9a227;
+    --text: #26243a;
+    --muted: #5c5a72;
+    --bg: #faf8f2;
+  }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink);
-         font-family: Georgia, 'Times New Roman', serif; line-height: 1.65; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
-  header { border-bottom: 2px solid var(--gold); padding-bottom: 20px; margin-bottom: 32px; }
-  h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: 0.02em; }
-  .updated { color: var(--muted); font-size: 0.95rem; font-style: italic; }
-  h2 { font-size: 1.25rem; margin-top: 2rem; color: var(--ink); }
-  p, li { font-size: 1.02rem; }
-  ul { padding-left: 1.4em; }
-  a { color: var(--gold); }
-  .note { background: #f1eee3; border-left: 4px solid var(--gold);
-          padding: 12px 16px; margin: 1rem 0; font-size: 0.98rem; }
-  footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .page { max-width: 760px; margin: 0 auto; padding: 48px 24px 64px; }
+  header { border-bottom: 3px solid var(--gold); padding-bottom: 20px; margin-bottom: 32px; }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--navy);
+    font-size: 1.9em;
+    margin: 0 0 6px;
+    line-height: 1.25;
+  }
+  .app-name { color: var(--gold); font-weight: 700; }
+  .updated { color: var(--muted); font-size: 0.9em; margin-top: 8px; }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--navy);
+    font-size: 1.25em;
+    margin: 36px 0 10px;
+  }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--navy-soft); }
+  .note {
+    background: #f3efe2;
+    border-left: 4px solid var(--gold);
+    padding: 12px 16px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95em;
+  }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85em; border-top: 1px solid #e2ddcf; padding-top: 16px; }
+  @media print { body { background: #fff; } .page { padding: 0; } }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>Privacy Policy — Denny Horoskop</h1>
-    <div class="updated">Last updated: September 8, 2026</div>
-  </header>
+<div class="page">
 
-  <h2>1. Overview</h2>
-  <p>Denny Horoskop is an astrology calculation application (natal charts,
-  transits, annual horoscopes, directions, solar returns, synastry).
-  The app operates <strong>fully offline</strong>: it does not require an
-  account, it does not connect to any server of ours, and it does not
-  transmit any data you enter.</p>
+<header>
+  <h1>Pravidlá ochrany osobných údajov<br><span class="app-name">Denny Horoskop</span></h1>
+  <div class="updated">Posledná aktualizácia: 10. september 2026</div>
+</header>
 
-  <h2>2. Data we collect: none</h2>
-  <p>We do not collect, store or process any personal data on our side.
-  There are no accounts, no login, no analytics, and no telemetry.
-  All information you enter (names, dates, times and places of birth) is
-  stored <strong>exclusively on your device</strong>, in the app's local
-  storage. When you uninstall the application, this data is removed with it.</p>
+<h2>1. Prevádzkovateľ</h2>
+<p>Aplikáciu <strong>Denny Horoskop</strong> (meno balíka: <code>sk.ndrjvvr.dennyhoroskop</code>) vyvíja a prevádzkuje nezávislý vývojár. Kontaktný e-mail pre otázky týkajúce sa osobných údajov: <strong>&#110;&#100;&#114;&#106;&#118;&#118;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</strong>.</p>
+<p>Aplikácia beží úplne na tvojom zariadení. Nemá vlastný server, nevyžaduje registráciu a nevytvára používateľské účty.</p>
 
-  <h2>3. Your data export</h2>
-  <p>The app lets you export your saved data to a file. That file is created
-  on your device and remains entirely under your control — it is never sent
-  anywhere by the application.</p>
+<h2>2. Dáta, ktoré aplikácia spracúva</h2>
 
-  <h2>4. Third-party service: advertising</h2>
-  <p>The only network communication in the app is performed by the embedded
-  <strong>Google Mobile Ads (AdMob) SDK</strong>, which loads and displays
-  advertisements. When an ad is loaded, the SDK may communicate with Google
-  servers and process, in accordance with Google's own policies:</p>
-  <ul>
-    <li>the advertising identifier of your device (GAID),</li>
-    <li>device and OS information needed to deliver the ad,</li>
-    <li>network information,</li>
-    <li>location data, only if you have granted location permission.</li>
-  </ul>
-  <p>Details of Google's data processing are available in the
-  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
-  You can limit personalized advertising in your device settings
-  (Android: Settings → Ads → “Opt out of Ad Personalization”).</p>
+<h3>a) Dáta o narodení</h3>
+<p>Pri vytvorení osoby v aplikácii môžeš zadať: meno, dátum narodenia, čas narodenia a miesto narodenia (alebo súradnice). Tieto údaje slúžia výhradne na výpočet horoskopov priamo na tvojom zariadení. Ukladajú sa <strong>len lokálne</strong> v databáze aplikácie na tvojom telefóne a <strong>nie sú odosielané</strong> na žiaden server ani tretím stranám.</p>
 
-  <div class="note">
-    In short: the application itself sends no data of yours anywhere.
-    Your horoscope data never leaves your phone — it stays on the device
-    or in an export file you create.
-  </div>
+<h3>b) Polohové údaje (GPS)</h3>
+<p>S tvojim povolením môže aplikácia čítať tvoju aktuálnu polohu:</p>
+<ul>
+  <li>automaticky pri spustení aplikácie (ak si ju už raz povolil) — aby doplnila „aktuálnu polohu“ pre tranzity, solárnu revolúciu a direkcie;</li>
+  <li>cez tlačidlo vo formulári osoby — keď o to explicitne požiadaš.</li>
+</ul>
+<p>Poloha sa číta len jednorazovo v danom okamihu (žiadne kontinuálne sledovanie) a ukladá sa lokálne ako súčasť záznamu osoby. Povolenie môžeš odmietnuť alebo kedykoľvek odvolať — výpočty potom bežia pre miesto narodenia.</p>
 
-  <h2>5. Changes to this policy</h2>
-  <p>We may update this policy from time to time. The date at the top of
-  this page always reflects the latest version.</p>
+<h3>c) Export dát</h3>
+<p>Aplikácia umožňuje vyexportovať uložené osoby do súboru. Súbor sa vytvorí na tvojom zariadení a zostáva pod tvojou plnou kontrolou — aplikácia ho nikam neodosiela.</p>
 
-  <h2>6. Contact</h2>
-  <p>If you have any questions about this privacy policy, contact us at
-  <a id="contact-email" href="#">…</a>.</p>
+<h2>3. Reklama (Google AdMob)</h2>
+<p>Aplikácia zobrazuje reklamné bannery poskytované spoločnosťou <strong>Google LLC</strong> prostredníctvom SDK Google AdMob. Na účely zobrazovania reklamy SDK zhromažďuje a odosiela spoločnosti Google:</p>
+<ul>
+  <li>informácie o zariadení (model, verzia operačného systému),</li>
+  <li>identifikátor Android Advertising ID (ak si ho nevypol v nastaveniach telefónu),</li>
+  <li>Základné údaje o zobrazovaní reklám potrebné na ich doručenie.</li>
+</ul>
+<p>Spoločnosť Google tieto údaje spracúva za účelom zobrazovania relevantnej reklamy. Od personalizovanej reklamy sa môžeš odmietnuť v nastaveniach telefónu (<em>Nastavenia → Súkromie → Reklamy → Vylúčiť z personalizácie reklamy</em>). Podrobnosti o spracovaní údajov spoločnosťou Google: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> a <a href="https://adssettings.google.com">Nastavenia reklám Google</a>.</p>
 
-  <footer>Denny Horoskop · <code>sk.ndrjvvr.dennyhoroskop</code></footer>
+<h2>4. Aké údaje opúšťajú tvoje zariadenie</h2>
+<p>Jedinými údajmi, ktoré opúšťajú zariadenie, sú údaje popísané v bode 3, ktoré spracúva spoločnosť Google na účely doručovania reklamy. Aplikácia neobsahuje žiadnu analýtu, štatistiky ani iné sledovanie. Tvoje dáta o narodení nikdy opúšťajú tvoj telefón.</p>
+
+<h2>5. Doba uchovávania a vymazanie</h2>
+<p>Všetky osobné údaje sú uložené výhradne na tvojom zariadení. Odinštalovaním aplikácie z telefónu sa trvalo odstránia. Jednotlivé osoby môžeš kedykoľvek zmazať aj priamo v aplikácii.</p>
+
+<h2>6. Deti</h2>
+<p>Aplikácia je určená pre všeobecné publikum a nevedome nespracúva osobné údaje detí. Keďže aplikácia nezhromažďuje žiadne osobné údaje na serveri, neexistuje spôsob, ako by mohla dáta detí zhromažďovať diaľkovo.</p>
+
+<h2>7. Zmeny týchto pravidiel</h2>
+<p>Tieto pravidlá môžeme aktualizovať. Aktuálna verzia bude vždy dostupná na tomto odkaze. Podstatné zmeny nadobúdajú platnosť dňom ich zverejnenia na tomto mieste.</p>
+
+<h2>8. Kontakt</h2>
+<p>Otázky týkajúce sa osobných údajov: <strong>&#110;&#100;&#114;&#106;&#118;&#118;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</strong></p>
+
+<footer>Denny Horoskop — presné astrologické výpočty priamo na tvojom zariadení.</footer>
+
 </div>
-<script>
-  // The address is assembled at runtime from char codes, so no scraper can match
-  // a literal email in the raw HTML. Browsers render it as a normal mailto link.
-  (function () {
-    var c = [110,100,114,106,118,118,114,64,103,109,97,105,108,46,99,111,109];
-    var addr = String.fromCharCode.apply(null, c);
-    var el = document.getElementById('contact-email');
-    if (el) { el.href = 'mailto:' + addr; el.textContent = addr; }
-  })();
-</script>
 </body>
 </html>
